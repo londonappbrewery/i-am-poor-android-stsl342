@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
-    android:background="@android:color/holo_green_dark"
+    android:background="#ecf0f1"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -13,30 +13,40 @@
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_I_am"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginLeft="97dp"
-        android:layout_marginTop="50dp"
-        android:contentDescription="@string/app_name"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="30dp"
         android:lineSpacingExtra="10sp"
-        android:text="@string/app_name"
-        android:textColor="@color/colorPrimary"
-        android:textSize="40sp"
+        android:text="@string/I_am"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
         android:textStyle="bold"
         android:typeface="normal" />
 
-    <ImageView
+    <TextView
+        android:id="@+id/text_poor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_centerHorizontal="false"
-        android:cropToPadding="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/text_I_am"
+        android:layout_toRightOf="@+id/text_I_am"
+        android:text="@string/poor"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_coal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/coal" />
 
 </RelativeLayout>
